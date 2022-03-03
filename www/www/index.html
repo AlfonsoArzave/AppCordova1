@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        -->
+        
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+
+        <!--<link rel="stylesheet" href="css/index.css">-->
+
+        <!--<script rel="stylesheet" src="css/reset.css"></script>-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Prueba cordova</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="card card-container">
+                <img id="profile-img" class="profile-img-card" src="img/logo1.png" />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form class="form-singin">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Correo electronico" required autofocus>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                    
+                    <div id="remember" class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me" >Recordar cuenta
+                        </label>
+                    </div>
+
+                    <button id="btnEntrar" class="btn btn-lg btn-primary btn-block btn-singin" type="submit">Entrar</button>
+                </form> <!--/form-->
+                <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+            </div><!--/card-container-->
+        </div><!--/container-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

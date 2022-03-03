@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Página inicial</title>
+</head>
+<body>
+
+    <header id="header">
+        <!-- Menú Navbar Inicio -->
+        <nav class="navbar navbar-expand-lg ">
+            
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" width="150" alt="">
+                </a>
+
+              <button class="navbar-toggler" 
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" 
+                        aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active link-menu" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link link-menu" href="producto.html">Producto</a>
+                  <a class="nav-link link-menu" href="contacto.html">Contacto</a>
+                  <!-- <a class="nav-link link-menu" href="login.html">Iniciar sesión</a> -->
+                  <a class="nav-link link-menu" href="">Cerrar app</a>
+
+
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Menú Navbar Fin -->
+    </header>
+
+    <section id="contacto">
+        <div class="container">
+            <div class="row justify-content-md-center espacio-row">
+                <div class="col-md-6">
+                    <h1> Ponte en contacto </h1>
+                    <p>
+                        Nos interesa conocer tu opinion, sugerencias, quejas y responder a tus preguntas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center espacio-row">
+                
+                <div class="col-md-6">
+                    
+                    <form method="POST">
+
+                        <div class="form-group">
+                          
+                          <input type="text" class="form-control mb-3" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                          <input type="email" class="form-control mb-3" name="correo" id="correo" placeholder="Correo electrónico">
+                          <input type="text" class="form-control mb-3" name="asunto" id="asunto" placeholder="Asunto">
+                          <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tus comentarios"></textarea>
+                        </div>
+                        
+                        
+                        <button id="btnComentarios" type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="contaier">
+            <div class="row justify-content-md-center">
+                <div class="col-md-8">
+                    <p>SMARTWATCH | Derechos reservados 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

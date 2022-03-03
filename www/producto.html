@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Página inicial</title>
+</head>
+<body>
+
+    <header id="header">
+        <!-- Menú Navbar Inicio -->
+        <nav class="navbar navbar-expand-lg ">
+            
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" width="150" alt="">
+                </a>
+
+              <button class="navbar-toggler" 
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" 
+                        aria-controls="navbarNavAltMarkup" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active link-menu" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link link-menu" href="producto.html">Producto</a>
+                  <a class="nav-link link-menu" href="contacto.html">Contacto</a>
+                   <!-- <a class="nav-link link-menu" href="login.html">Iniciar sesión</a> -->
+                  <a class="nav-link link-menu" href="">Cerrar app</a>
+
+
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Menú Navbar Fin -->
+    </header>
+
+    <section id="producto">
+        <div class="container">
+            <div class="row justify-content-md-center espacio-row">
+                <div class="col-md-6">
+                    <h1> Producto </h1>
+                    <p>
+                        Selecciona el smartwatch que más se apegue a tu personalidad
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center espacio-row">
+                
+                <div class="col-md-3">
+                    <img src="img/watch/watch1.png" width="250" alt="Reloj 1" class="img-fluid">
+                    <p><strong> Reloj 1</strong></p>
+                    <P><strong> $82</strong></P>
+                    <button id="btnReloj1" type="button" class="btn btn-outline-light">Comprar </button>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/watch/watch4.png" width="250" alt="Reloj 2" class="img-fluid">
+                    <p><strong> Reloj 2</strong></p>
+                    <P><strong> $96</strong></P>
+                    <button id="btnReloj2" type="button" class="btn btn-outline-light">Comprar </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="img/watch/watch5.png" width="250" alt="Reloj 3" class="img-fluid">
+                    <p><strong> Reloj 3</strong></p>
+                    <P><strong> $75</strong></P>
+                    <button id="btnReloj3" type="button" class="btn btn-outline-light">Comprar </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="contaier">
+            <div class="row justify-content-md-center">
+                <div class="col-md-8">
+                    <p>SMARTWATCH | Derechos reservados 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"></script>
+        <script src="cordova.js"></script>
+        <script src="js/producto.js"></script>
+</body>
+</html>
